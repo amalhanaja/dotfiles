@@ -5,7 +5,6 @@ dir=$HOME/dotfiles
 function install_homebrew() {
     echo "Installing Homebrew.."
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-    eval "$(/usr/local/bin/brew shellenv)"
     echo "Homebrew Installed"
 }
 
