@@ -3,8 +3,10 @@
 dir=$HOME/dotfiles
 
 function install_homebrew() {
+    echo "Installing Homebrew.."
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-    # echo >&2 "I require foo but it's not installed.  Aborting."
+    eval "$(/usr/local/bin/brew shellenv)"
+    echo "Homebrew Installed"
 }
 
 function install_brewfile() {
